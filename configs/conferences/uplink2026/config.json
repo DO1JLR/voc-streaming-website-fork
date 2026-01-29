@@ -1,0 +1,64 @@
+{
+    "$schema": "../../../docs/config-schema.json",
+    "conference": {
+        "title": "Uplink 2026",
+        "acronym": "uplink26",
+        "media_slug": "uplink26",
+        "description": "Live streaming from the Uplink 2026",
+        "keywords": [
+            "Python"
+        ],
+        "organizer": "Selfnet e.V.",
+        "start": "2026-03-06T08:00:00+02:00",
+        "end": "2026-03-08T19:00:00+02:00",
+        "time_zone_name": "Europe/Zurich",
+        "streamingConfig": {
+            "features": {
+                "relive": true,
+                "embed": true,
+                "feedback": false,
+                "releases": true,
+                "social": {
+                    "hashtag": "#uplink26",
+                    "mastodon": true
+                },
+                "chat": {}
+            },
+            "schedule": {
+                "url": "https://cfp.selfnet.de/uplink-2026/schedule/export/schedule.xml",  # TODO: Check
+                "scale": 7,
+                "index_offset": -1,
+                "roomfilter": [
+                  "Henny-Brenner-Saal",  # TODO: Check
+                  "Kleiner Saal",  # TODO: Check
+                  "Kabinett"  # TODO: Check
+                ]
+            },
+            "html": {
+                "banner" : "<img src='/configs/conferences/uplink2026/uplink.svg' alt=''>",
+                "footer": "\n\t\tby <a href=\"https://c3voc.de\">C3VOC</a>, <a href=\"https://chaoswest.tv/\">Chaos-West TV</a>, <a href=\"https://winkekatze.tv/\">winkekatze.tv</a> & <a href=\"https://selfnet.de/\">Selfnet e.V.</a>\n\t",
+                "not_started": null
+            }
+        },
+        "overviewPage": null,
+        "extraFiles": null,
+        "rooms": [
+            {
+                "guid": "73b6b66b-e0dd-5fe2-ad4d-fda51c58f296",  # TODO: Change
+                "name": "Aula",  # TODO: Change
+                "slug": "aula",  # TODO: Change
+                "streamId": "cwtv",
+                "streamingConfig": {
+                    "display": "Aula",  # TODO: Change
+                    "schedule": true,
+                    "preview": true,
+                    "translation": false,
+                    "subtitles": false,
+                    "feedback": false,
+                    "chat": {},
+                    "social": true
+                }
+            }
+        ]
+    }
+}
